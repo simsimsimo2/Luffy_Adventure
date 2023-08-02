@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luffy Adventure</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+   <script type="module" src="./js/main.js" defer></script>
+
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- Main theme of One piece: We are! -->
+    <audio id="musicBackground" src="./music/One-piece-8bits.mp3" loop="true" autoplay="true"></audio>
+    <script>
+        var audio = document.getElementById("musicBackground");
+        audio.volume = 0.2;
+    </script>
+
+    <!-- Shows the health bar and  current score -->
+    <header>
+        <div id="healthBar"></div>
+        <h2>Point totaux: <span id="score"></span> </h2>
+    </header>
+
+    <main>
+
+        <!-- Everything inside the brown container -->
+        <div id="container">
+            <img src="./img/backGround.jpg" alt="paysage">
+        </div>
+
+        <!-- End Screen with Score -->
+        <div id="end" class="endScreen">
+            <div class="end-content">
+                <div>
+                    <p>
+                        Game Over
+                    </p>
+                    <p>
+                        Your score is : <span id="finalScore"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Showing all of the controls -->
+    <footer>
+        <div id="control">
+            <p> ------ To move press: W,A,S,D ------ To exit press: Esc ------ To restart press: F5 ------ &copy;
+                Simon-Gabriel Cloutier</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
